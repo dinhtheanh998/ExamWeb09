@@ -1,0 +1,55 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.dialog__container {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 4px;
+}
+
+.dialog__body {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dialog__body-type.warning {
+    width: 36px;
+    height: 36px;
+    background-image: url(../assets/images/Sprites.64af8f61.svg);
+    background-position: -598px -463px;
+}
+.dialog__body-type.error {
+    width: 36px;
+    height: 36px;
+    background-image: url(../assets/images/Sprites.64af8f61.svg);
+    background-position: -752px -462px;
+}
+
+.dialog__body-type.question {
+    width: 36px;
+    height: 36px;
+    background-image: url(../assets/images/Sprites.64af8f61.svg);
+    background-position: -832px -462px;
+}
+
+.dialog__body-type.info {
+    width: 36px;
+    height: 36px;
+    background-image: url(../assets/images/Sprites.64af8f61.svg);
+    background-position: -672px -462px;
+}
+
+.dialog__body-description {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+.dialog__footer {
+    padding-top: 12px;
+}

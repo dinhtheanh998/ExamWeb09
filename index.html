@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./assets/font/icofont/icofont.min.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Danh sách nhân viên - Amis</title>
+  </head>
+  <body>
+    <div class="">
+      <div class="wrap__content">
+        <div class="sidebar">
+          <div class="sidebar__header">
+            <div class="wrap__sidebar__header">
+              <div class="sidebar__header__menu"></div>
+              <div class="sidebar__header__logo">
+                <img
+                  src="./assets/images/Logo_Module_TiengViet_White.66947422.svg"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__menu">
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tổng quan</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+            <div class="sidebar__menu__item">
+              <div class="sidebar__menu__item__icon"></div>
+              <div class="sidebar__menu__item__text">Tài chính</div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__header">
+            <div class="left__content__header">
+              <div class="header__toggle"></div>
+              <div class="dropdown__company">
+                Công ty THHH sản xuất - Thương mại - Dịch vụ Quy Phúc
+              </div>
+            </div>
+            <div class="right__content__header">
+              <div class="header__notify" title="Thông báo"></div>
+              <div class="header_Info">
+                <div class="info__avatar">
+                  <img src="./assets/images/defaultAvatar.jpg" alt="Avt" />
+                </div>
+                <div class="info__name">Nguyễn Văn A</div>
+              </div>
+            </div>
+          </div>
+          <div class="content__body">
+            <div class="wrap__body">
+              <div class="wrap__top__body">
+                <h2 class="body__header__title">Nhân Viên</h2>
+                <button class="btn btn-add-employ">Thêm Nhân viên</button>
+              </div>
+              <div class="wrap__bottom__body">
+                <div class="body__search__reload">
+                  <div class="wrap-input">
+                    <input
+                      type="text"
+                      class="input__search"
+                      placeholder="Tìm theo mã, tên nhân viên"
+                    />
+                    <div class="search__icon"></div>
+                  </div>
+                  <div class="reload__icon" title="Làm mới dữ liệu"></div>
+                </div>
+                <div class="body__table__data">
+                  <div class="wrap-table">
+                    <table>
+                      <tr class="table__header">
+                        <th class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </th>
+                        <th>Mã nhân viên</th>
+                        <th>Tên nhân viên</th>
+                        <th>Giới tính</th>
+                        <th class="text-center">Ngày sinh</th>
+                        <th title="Số chứng minh nhân dân">Số CMND</th>
+                        <th>Chức Danh</th>
+                        <th>Mã đơn vị</th>
+                        <th>Tên đơn vị</th>
+                        <th title="Tên nhóm khách hàng, nhà cung cấp">
+                          Nhóm KH, NCC
+                        </th>
+                        <th title="Tài khoản công nợ phải thu">
+                          Tk Công nợ phải thu
+                        </th>
+                        <th title="Tài khoản công nợ phải trả">
+                          Tk Công nợ phải trả
+                        </th>
+                        <th>Số tài khoản</th>
+                        <th>Tên ngân hàng</th>
+                        <th title="Chi nhánh tài khoản ngân hàng">
+                          Chi nhánh TK ngân hàng
+                        </th>
+                        <th>Địa chỉ</th>
+                        <th title="Điện thoại di động">ĐT Di động</th>
+                        <th class="text-right">Tiền Lương</th>
+                        <th class="lastcol text-center">Chức năng</th>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__body">
+                        <td class="headcol">
+                          <div>
+                            <label
+                              html-for="tableCheck"
+                              class="checkbox custom__checkbox"
+                            >
+                              <input type="checkbox" id="tableCheck" hidden />
+                              <div class="wrap__icon-custom">
+                                <i class="icofont-check-alt"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </td>
+                        <td>NV01</td>
+                        <td>Đinh Thế Anh</td>
+                        <td>Nam</td>
+                        <td class="text-center">09/08/1998</td>
+                        <td>125816832</td>
+                        <td>Nhân viên</td>
+                        <td>VP01</td>
+                        <td>Văn Phòng 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>21510002190948</td>
+                        <td>BIDV</td>
+                        <td></td>
+                        <td>Cổ nhuế - Bắc từ liêm -hà nội</td>
+                        <td>0961494001</td>
+                        <td class="text-right">5.000.000</td>
+                        <td class="lastcol text-center">
+                          <div class="wrap__context">
+                            <button class="context__btn-edit">Sửa</button>
+                            <div class="context__icon"></div>
+                            <div class="context__menu">
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                              <div class="context__menu__item">
+                                <a> Xóa </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="wrap__pagging">
+                    <div class="total__documents">
+                      <span
+                        >Tổng số
+                        <strong class="number__documents">100</strong> bản
+                        ghi</span
+                      >
+                    </div>
+                    <div class="pagging">
+                      <div class="pagging__range">
+                        <div class="dropdown">
+                          <div class="dropdown-label">
+                            10 bản ghi trên 1 trang
+                          </div>
+                          <div class="dropdown-icon"></div>
+                          <div class="dropdown__listItem">
+                            <ul class="wrap-item">
+                              <li
+                                class="dropdown-item"
+                                data-value="20 bản ghi trên 1 trang"
+                              >
+                                <span> 20 bản ghi trên 1 trang </span>
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                data-value="30 bản ghi trên 1 trang"
+                              >
+                                <span> 30 bản ghi trên 1 trang </span>
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                data-value="50 bản ghi trên 1 trang"
+                              >
+                                <span> 50 bản ghi trên 1 trang </span>
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                data-value="100 bản ghi trên 1 trang"
+                              >
+                                <span> 100 bản ghi trên 1 trang </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex align-center gap-x-8">
+                        <span class="pagging__option disable">Trước</span>
+                        <span class="pagging__option pagging__number active"
+                          >1</span
+                        >
+                        <span class="pagging__option pagging__number">2</span>
+                        <span class="pagging__option pagging__number">3</span>
+                        <span>...</span>
+                        <span class="pagging__option pagging__number">10</span>
+                        <span class="pagging__option">Sau</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- popup -->
+    <div class="pop__up">
+      <div class="popup__overlay"></div>
+      <form action="" class="form__employee">
+        <div class="employee__top flex">
+          <h2 class="employee__title">Thông tin nhân viên</h2>
+          <div class="flex align-center">
+            <label
+              for="isCustomer"
+              class="checkbox__customer employee__checkbox custom-checkbox"
+            >
+              <input type="checkbox" id="isCustomer" hidden />
+              <div class="custom-checkbox-wrap"></div>
+            </label>
+            <label for="isCustomer">Là khách hàng</label>
+          </div>
+          <div class="flex align-center">
+            <label
+              for="isSuplier"
+              class="checkbox__customer employee__checkbox custom-checkbox"
+            >
+              <input type="checkbox" id="isSuplier" hidden />
+              <div class="custom-checkbox-wrap"></div>
+            </label>
+            <label for="isSuplier">Là nhà cung cấp</label>
+          </div>
+        </div>
+        <div class="employee__details flex-col">
+          <div class="flex gap-x-16">
+            <div class="left__details">
+              <div class="flex-col w-40 wrap__textfield">
+                <label for="" class="field__required">Mã nhân viên</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="1"
+                  title="Mã nhân viên không được để trống"
+                />
+                <span
+                  class="input__text-error"
+                  title="Mã nhân viên không được để trống"
+                  >Mã nhân viên không được để trống</span
+                >
+              </div>
+              <div class="flex-col grow-1 wrap__textfield">
+                <label for="" class="field__required">Tên</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="2"
+                  title="Tên không được để trống"
+                />
+                <span class="input__text-error">Có lỗi rồi đại vương ơi</span>
+              </div>
+              <div class="flex-col w-full wrap__textfield">
+                <label for="" class="field__required">Đơn vị</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="4"
+                />
+                <span class="input__text-error">Có lỗi rồi đại vương ơi</span>
+              </div>
+              <div class="flex-col w-full wrap__textfield">
+                <label for="">Chức danh</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="7"
+                />
+                <span class="input__text-error"></span>
+              </div>
+            </div>
+            <div class="right__details">
+              <div class="flex-col w-40 wrap__textfield">
+                <label for="">Ngày sinh</label>
+                <input
+                  type="date"
+                  class="input__custom primary-input"
+                  tabindex="3"
+                />
+                <span class="input__text-error"></span>
+              </div>
+              <div class="flex-col wrap__gender wrap__textfield">
+                <label for="">Giới tính</label>
+                <div class="flex gap-x-16 gender">
+                  <div class="flex gap-x-8 align-center">
+                    <label
+                      for="men"
+                      class="flex align-center gap-x-8 custom-radio"
+                    >
+                      <input type="radio" name="gender" id="men" hidden />
+                      <div></div>
+                    </label>
+                    <label for="men">Nam</label>
+                  </div>
+                  <div class="flex gap-x-8 align-center">
+                    <label
+                      for="women"
+                      class="flex align-center gap-x-8 custom-radio"
+                    >
+                      <input type="radio" name="gender" id="women" hidden />
+                      <div></div>
+                    </label>
+                    <label for="women">Nữ</label>
+                  </div>
+                  <div class="flex gap-x-8 align-center">
+                    <label
+                      for="other"
+                      class="flex align-center gap-x-8 custom-radio"
+                    >
+                      <input type="radio" name="gender" id="other" hidden />
+                      <div></div>
+                    </label>
+                    <label for="other">Khác</label>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-col grow-1 wrap__textfield">
+                <label for="" title="Số chứng minh nhân dân">Số CMND</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="5"
+                />
+                <span class="input__text-error"></span>
+              </div>
+              <div class="flex-col w-40 wrap__textfield">
+                <label for="">Ngày cấp</label>
+                <input
+                  type="date"
+                  class="input__custom primary-input"
+                  tabindex="6"
+                />
+                <span class="input__text-error"></span>
+              </div>
+              <div class="flex-col w-full wrap__textfield">
+                <label for="">Nơi cấp</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="8"
+                />
+                <span class="input__text-error"></span>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col w-full wrap__textfield">
+            <label for="">Địa chỉ</label>
+            <input
+              type="text"
+              class="input__custom primary-input"
+              tabindex="9"
+            />
+            <span class="input__text-error"></span>
+          </div>
+          <div class="flex gap-x-8">
+            <div class="flex align-center w-full gap-x-8">
+              <div class="flex-col w-50 wrap__textfield">
+                <label for="" class="" title="Điện thoại di động"
+                  >ĐT di động</label
+                >
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="10"
+                />
+                <span class="input__text-error"></span>
+              </div>
+              <div class="flex-col w-50 wrap__textfield">
+                <label for="" title="Điện thoại di động">ĐT cố định</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="11"
+                />
+                <span class="input__text-error"></span>
+              </div>
+            </div>
+            <div class="flex align-center w-full gap-x-8">
+              <div class="flex-col w-50 wrap__textfield">
+                <label for="">Email</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="12"
+                />
+                <span class="input__text-error"></span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-8">
+            <div class="flex align-center w-full gap-x-8">
+              <div class="flex-col w-50 wrap__textfield ">
+                <label for="">Tên tài khoản ngân hàng</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input error"
+                  tabindex="13"
+                />
+                <span class="input__text-error"></span>
+              </div>
+              <div class="flex-col w-50 wrap__textfield">
+                <label for="">Tên ngân hàng</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="14"
+                />
+                <span class="input__text-error"></span>
+              </div>
+            </div>
+            <div class="flex align-center w-full gap-x-8">
+              <div class="flex-col w-50 wrap__textfield">
+                <label for="">Chi nhánh</label>
+                <input
+                  type="text"
+                  class="input__custom primary-input"
+                  tabindex="15"
+                />
+                <span class="input__text-error"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="employee__button">
+          <button class="btn md-em" tabindex="16">Hủy</button>
+          <div class="flex align-center gap-x-12">
+            <button class="btn md-em" tabindex="17">Cất</button>
+            <button class="btn btn-add-save" tabindex="18">Cất và thêm</button>
+          </div>
+        </div>
+        <div class="flex align-item gap-x-16 wrap__question__close">
+          <div class="btn__question"></div>
+          <div class="btn__close"></div>
+        </div>
+      </form>
+    </div>
+    <!-- dialog -->
+    <!-- <div class="dialog">
+      <div class="dialog__overlay"></div>
+      <div class="dialog__container flex-col">
+        <div class="dialog__body flex align-center gap-x-16 grow-1">
+            <div class="dialog__body-type question"></div>
+            <div class="dialog__body-description">Mã nhân viên tồn tại trong hệ thống vui lòng kiểm tra lại</div>
+        </div>
+        <div class="dialog__footer flex justify-end gap-x-8">
+          <button class="btn">Đồng ý</button>
+        </div>  
+      </div>
+    </div> -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
